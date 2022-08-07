@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Poppins:wght@300;400&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Cormorant SC', serif;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.h1 h1{
+    color: white;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+img{
+    width: 10rem;
+    height: 10rem;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h3{
+    color: white;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:500px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center ;
+    }
+    h3{
+        font-size: .8rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+   
+}

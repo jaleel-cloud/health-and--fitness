@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant SC', serif;
+    
+}
+body{
+    background-image: url("/images/bmi.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    font-family: 'Cormorant SC', serif;
+}
+/* //main div// */
+.main{
+    display: flex;
+    
+}
+
+form label{
+    color: white;
+}
+/* //left div// */
+.left{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+}
+form{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+    top: 30%;
+    gap: .4rem;
+}
+form>:nth-child(1){
+    font-size: 1.4rem;
+}
+form>:nth-child(2){
+    width: 10rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px white;
+}
+form>:nth-child(3){
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+form>:nth-child(4){
+    width: 10rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px white;
+}
+form>:nth-child(1){
+    font-size: 1.4rem;
+}
+form>:nth-child(5){
+    width: 6rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px white;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+form>:nth-child(6){
+    width: 6rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px white;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 2rem;
+    top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* right div */
+.right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+.right>:nth-child(1){
+    color: white;
+    font-weight: bold;
+}
+.right>:nth-child(2){
+    color: white;
+    font-size: 1.4rem;
+}
+.right>:nth-child(3){
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* media queries */
+
+@media screen and (max-width:500px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .right>:nth-child(2){
+        font-size: 1.2rem;
+    }
+    .right>:nth-child(3){
+        font-size: 1.2rem;
+    }
+}

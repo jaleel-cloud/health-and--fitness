@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Poppins:wght@300;400&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+ background-image: url("/images/workout.jpg");   
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ font-family: 'Cormorant SC', serif;
+}
+/*  */
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+body>:nth-child(1){
+    color: black;
+    font-size: 1.4rem;
+    
+
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+
+}
+/* .div1>:nth-child(3){
+    width: 30rem;
+} */
+h2,h3{
+    color: black;
+ 
+    
+}
+div{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    background-color: rgba(0,0,0,0);
+}
+img{
+    width: 20rem;
+    height: 20rem;
+    margin-right: 3rem;
+    border-radius: 1.6rem;
+    box-shadow: 6px 6px 3px white;
+    border: 2px solid white;
+}
+h2{
+    margin-left: 3rem;
+    font-size: 2rem;
+    
+}
+h3{
+    font-size: 1.6rem;
+}
+.h3{
+    display: flex;
+    flex-direction: column;
+}
+
+/* media queries */
+
+@media screen and (max-width:500px){
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    h2,h3{
+        font-size: 1.3rem;
+    }
+    img{
+        width: 14rem;
+        
+    }
+    h1{
+        font-size: 2rem;
+       
+    }
+    .h1{
+        display: flex;
+        justify-content: center;
+    }
+}

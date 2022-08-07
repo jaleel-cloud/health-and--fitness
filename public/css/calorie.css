@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant SC', serif;
+}
+body{
+    background-image: url("/images/calorie.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+/* left */
+.left{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex: 1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+    top: 34%;
+    gap: .4rem;
+}
+form>:nth-child(1){
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+form>:nth-child(2){
+    width: 10rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 4px 4px 4px black;
+}
+form>:nth-child(3){
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+form>:nth-child(4){
+    width: 10rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 4px 4px 4px black;
+}
+form>:nth-child(5){
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+form>:nth-child(6){
+    width: 10rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 4px 4px 4px black;
+}
+form>:nth-child(7){
+    width: 6rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+form>:nth-child(8){
+    width: 6rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: 2rem;
+    top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* right */
+.right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.right p{
+    color: white;
+}
+.right>:nth-child(1){
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.right>:nth-child(2){
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    align-items: center;
+}
+.right>:nth-child(3){
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.6);
+}
+.right>:nth-child(4){
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* media queries */
+@media screen and (max-width:500px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        
+    }
+    .right{
+        margin-top: 20rem;
+    }
+}
+@media screen and (max-width:420px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        
+    }
+    .right{
+        margin-top: 25rem;
+    }
+}
+@media screen and (max-width:320px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        
+    }
+    .right{
+        margin-top: 40rem;
+    }
+}
